@@ -10,7 +10,7 @@ import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
-        <div>
+        <div className='mt-16'>
             <Banner></Banner>
             <section className='max-w-[1280px] mx-auto'>
                 <AiSocialAssistant></AiSocialAssistant>

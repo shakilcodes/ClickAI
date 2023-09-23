@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    const [scrolling, setScrolling] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 0) {
+            setScrolling(true);
+        } else {
+            setScrolling(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const navbarClasses = `flex justify-between items-center max-w-[1440px] mx-auto pt-3 ${
+        scrolling ? 'bg-opacity-25 bg-black fixed top-0 left-0 right-0' : 'bg-base-100'
+    }`;
+
     return (
-        <div>
-            <div className="flex justify-between items-center bg-base-100 max-w-[1440px] mx-auto pt-3">
+        <div className='fixed top-0 right-0 left-0 z-[1] bg-white h-16'>
+            <div className="flex justify-between items-center max-w-[1440px] mx-auto pt-3">
                 <div className="">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,11 +43,11 @@ const Navbar = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl font-bold text-[35px]"> <img src="https://i.postimg.cc/Prmknrnx/1.jpg" alt="" /> Click</a>
+                    <Link to='/' className="btn btn-ghost normal-case text-2l font-bold text-[35px]"> <img src="https://i.postimg.cc/Prmknrnx/1.jpg" alt="" /> Click</Link>
                 </div>
                 <div className=" hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 text-[16px] text-gray-400 font-semibold z-[1] ">
-                        <li><a >AI Assistant <span className='border bg-gray-200 text-blue-600'>New</span></a></li>
+                        <li><a >AI Assistant <span className='border bg-gray-200 text-[#49377B]'>New</span></a></li>
                         <li tabIndex={0} className=''>
                             <details>
                                 <summary>Platform</summary>
@@ -34,11 +56,10 @@ const Navbar = () => {
                                     <li><a>Submenu 2</a></li>
                                 </ul>
                             </details>
-
                         </li>
                         <li className=''>
                             <details>
-                                <summary>Resorces</summary>
+                                <summary>Resources</summary>
                                 <ul className="p-2 bg-white text-[20px]">
                                     <li><a>Submenu 1</a></li>
                                     <li><a>Submenu 2</a></li>
@@ -49,7 +70,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="font-semibold mr-16">
-                    <button className='border p-2 px-5 rounded-md shadow-md mr-2 '><a className="">Sign In</a></button>
+                    <button className='border p-2 px-5 rounded-md shadow-md mr-2 '><Link to='/login' className="">Sign In</Link></button>
                     <button className=' p-2 shadow-2xl  rounded-md text-white w-[145px] bg-[#266cdf]'><a className="p-2 shadow-lg">Try For Free</a></button>
                 </div>
             </div>
@@ -58,4 +79,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
