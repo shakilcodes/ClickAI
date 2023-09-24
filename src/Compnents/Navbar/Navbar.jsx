@@ -55,7 +55,7 @@ const Navbar = () => {
                 </div>
                 <div className="font-semibold lg:mr-16 flex items-center">
                     <button className='border p-2 px-5 rounded-md shadow-md mr-2 hidden lg:block'><Link to='/login' className="">Sign In</Link></button>
-                    <button className=' p-2 shadow-2xl  rounded-md text-white w-[145px] bg-[#266cdf]'><a className="p-2 shadow-lg">Try For Free</a></button>
+                    <button className=' p-2 shadow-2xl  rounded-md text-white md:w-[145px] bg-[#266cdf]'><a className="p-2 shadow-lg">Try For Free</a></button>
 
                     <div className="dropdown ">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -2,9 +2,20 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className=''>
-            <section className='flex justify-between'>
-                <div>
+        <div className='mx-5 lg:mx-0'>
+            <div className='lg:hidden block mb-10'>
+                <div className='flex gap-2'>
+                    <div>
+                        <img src="https://i.postimg.cc/Prmknrnx/1.jpg" alt="" />
+                    </div>
+                    <div>
+                        <h1 className='text-4xl font-bold'>Click</h1>
+                    </div>
+                </div>
+                <p>All-in-one Social Marketing Platform.</p>
+            </div>
+            <section className='lg:flex lg:justify-between grid md:grid-cols-4 grid-cols-2 gap-5'>
+                <div className='hidden lg:block'>
                     <div className='flex gap-2'>
                         <div>
                             <img src="https://i.postimg.cc/Prmknrnx/1.jpg" alt="" />
@@ -13,7 +24,7 @@ const Footer = () => {
                             <h1 className='text-4xl font-bold'>Click</h1>
                         </div>
                     </div>
-                            <p>All-in-one Social Marketing Platform.</p>
+                    <p>All-in-one Social Marketing Platform.</p>
                 </div>
                 <div>
                     <h1 className='text-[#CACAD1] mb-4'>PRODUCT AREAS</h1>
@@ -63,7 +74,7 @@ const Footer = () => {
                 </div>
             </section>
             <div>
-                <hr className='mt-16 mb-9'/>
+                <hr className='mt-16 mb-9' />
                 <h1 className='text-center mb-10'>© 2023 Shakil Ahmed | All rights reserved.</h1>
             </div>
         </div>

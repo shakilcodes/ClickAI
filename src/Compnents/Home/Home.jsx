@@ -28,10 +28,10 @@ const Home = () => {
             <section className='max-w-[1280px] mx-auto'>
                 <Blogers></Blogers>
             </section>
-            <section className='max-w-[1280px] mx-auto hidden'>
+            <section className='max-w-[1280px] mx-auto'>
                 <FrequentlyAsked></FrequentlyAsked>
             </section>
-            <section className='max-w-[1280px] mx-auto hidden'>
+            <section className='max-w-[1280px] mx-auto'>
                 <Footer></Footer>
             </section>
             

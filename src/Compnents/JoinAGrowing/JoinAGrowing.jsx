@@ -7,7 +7,7 @@ const JoinAGrowing = () => {
             <div className='md:flex justify-between items-center px-5 md:px-10 lg:px-0 '>
                 <div className='md:w-[520px] text-white'>
                     <h1 className=' text-4xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#FEC470] to-[#fcc82a]'>Join a growing community of like-minded people using Social to grow their online presence.</h1>
-                    <div className='w-[400px] '>
+                    <div className='md:w-[400px] '>
                         <h1 className='text-xl font-bold'>Private Facebook group</h1>
                         <p className='mb-5'>Bounce ideas off members of Flick’s Social Hub, a community of ambitious creators, marketers, and small business owners.
 
