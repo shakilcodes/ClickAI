@@ -3,8 +3,8 @@ import React from 'react';
 const HashTag = () => {
     return (
         <section>
-            <div className='flex justify-between items-center gap-10 my-10'>
-                <div className='bg-[#F0F5FF] p-6 rounded-2xl w-[50%] md:h-[680px]'>
+            <div className='md:flex justify-between items-center gap-10 my-10 mx-5 lg:mx-0'>
+                <div className='bg-[#F0F5FF] p-6 rounded-2xl md:w-[50%] md:h-[680px]'>
                     <div>
                         <h1 className='text-3xl font-bold'>Hashtag Tools</h1>
                     </div>
@@ -12,20 +12,20 @@ const HashTag = () => {
                     <button className='text-[18px] w-[410px ] bg-[#266CDF] px-16 p-2 rounded-lg mt-6 text-white'>Learn about Hashtag Tools</button>
                     <img src="https://i.postimg.cc/JhcM9cJn/body-2.jpg" alt="" />
                 </div>
-                <div className='bg-[#F4F0FF] p-6 rounded-2xl w-[50%] md:h-[680px]'>
+                <div className='bg-[#F4F0FF] p-6 rounded-2xl mt-5 md:mt-0 md:w-[50%] md:h-[680px]'>
                     <div>
                         <h1 className='text-3xl font-bold'>Post Scheduler</h1>
                     </div>
                     <p className='text-xl mt-3'>Your time and headspace are precious. Make planning, creating and publishing your content less stressful, with a reliable and easy-to-use Scheduler.
 
-</p>
+                    </p>
                     <button className='text-[18px] w-[410px ] bg-[#8A3FF2] px-16 p-2 rounded-lg mt-6 text-white'>Learn about Scheduler</button>
                     <img src="https://i.postimg.cc/PfSH1Q1b/body1.jpg" alt="" />
                 </div>
             </div>
             <div>
-                <div className='flex justify-between items-center gap-10 my-10'>
-                    <div className='bg-[#FFF8F0] p-6 rounded-2xl w-[50%] md:h-[680px]'>
+                <div className='md:flex justify-between items-center gap-10 my-10 mx-5 lg:mx-0'>
+                    <div className='bg-[#FFF8F0] p-6 rounded-2xl md:w-[50%] md:h-[680px]'>
                         <div>
                             <h1 className='text-3xl font-bold'>Analytics & Reporting</h1>
                         </div>
@@ -33,7 +33,7 @@ const HashTag = () => {
                         <button className='text-[18px] w-[410px ] bg-[#ED9100] px-16 p-2 rounded-lg mt-6 text-white'>Learn about Analytics Tool</button>
                         <img src="https://i.postimg.cc/wvdNcp8r/section-2-2.jpg" alt="" />
                     </div>
-                    <div className='bg-[#FAFAFA] p-6 rounded-2xl w-[50%] md:h-[680px]'>
+                    <div className='bg-[#FAFAFA] p-6 rounded-2xl mt-5 md:mt-0 md:w-[50%] md:h-[680px]'>
                         <div>
                             <h1 className='text-3xl font-bold'>Resources</h1>
                         </div>
@@ -43,6 +43,7 @@ const HashTag = () => {
                     </div>
                 </div>
             </div>
+           
         </section>
     );
 };

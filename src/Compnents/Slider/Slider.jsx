@@ -46,24 +46,28 @@ const Slider = () => {
     )
 
     return (
-        <div className='mb-20'>
+        <div className='mb-20 mx-5 lg:mx-0'>
             <div className='text-center mt-20'>
 
                 <h1 className='text-3xl font-bold mb-16'>Running your socials isn't easy. It's time to take back <br /> control of your time and headspace.</h1>
             </div>
             <div ref={sliderRef} className="keen-slider">
 
-                <div className="keen-slider__slide number-slide1  shadow-md flex items-center gap-10 justify-center bg-[#EDFDFC] h-[300px] rounded-2xl">
-                    <img className='w-[200px] h-[250px] rounded-2xl' src="https://i.postimg.cc/jqX2r4zB/person3.jpg" alt="" />
-                    <div className='w-[580px]'>
+                <div className="keen-slider__slide number-slide1  shadow-md lg:flex items-center gap-10 justify-center bg-[#EDFDFC] lg:h-[300px] rounded-2xl">
+                    <div className='flex justify-center pt-5 lg:pt-0'>
+                        <img className='w-[200px] h-[250px] rounded-2xl' src="https://i.postimg.cc/jqX2r4zB/person3.jpg" alt="" />
+                    </div>
+                    <div className='px-5 lg:px-0 py-5 lg:py-5 lg:w-[580px] text-center hidden md:block'>
                         <h1>Without Flick, I wouldn’t be able to run and grow my business or personal brand the way I am. Whether it's planning my posts ahead of time, or finding niche hashtags quickly, Flick helps me achieve my goals faster than ever before - it's a must have platform for any business or brand that values their time and wants to leverage social effectively.</h1>
                         <h4 className='mt-5 font-bold text-xl'>Benjamin Leavitt</h4>
                         <p>Instagram Coach & YouTuber</p>
                     </div>
                 </div>
-                <div className="keen-slider__slide number-slide1  shadow-md flex items-center gap-10 justify-center bg-[#FFF2F3] h-[300px] rounded-2xl">
-                    <img className='w-[200px] h-[250px] rounded-2xl' src="https://i.postimg.cc/13z9Px9q/person1.jpg" alt="" />
-                    <div className='w-[580px]'>
+                <div className="keen-slider__slide number-slide1  shadow-md lg:flex items-center gap-10 justify-center bg-[#EDFDFC] lg:h-[300px] rounded-2xl">
+                    <div className='flex justify-center pt-5 lg:pt-0'>
+                        <img className='w-[200px] h-[250px] rounded-2xl' src="https://i.postimg.cc/13z9Px9q/person1.jpg" alt="" />
+                    </div>
+                    <div className='px-5 lg:px-0 py-5 lg:py-5 lg:w-[580px] text-center hidden md:block'>
                         <h1>Flick's been a game-changer for me. It’s helped me take the guesswork out of hashtag research and helped my clients posts get more visibility. I love the excellent reporting, and the ability to see the potential reach of a hashtag versus how popular a hashtag is. This is absolute gold!</h1>
                         <h4 className='mt-5 font-bold text-xl'>Kim Willis
                         </h4>
@@ -71,9 +75,11 @@ const Slider = () => {
                         </p>
                     </div>
                 </div>
-                <div className="keen-slider__slide number-slide1  shadow-md flex items-center gap-10 justify-center bg-[#F4F0FF] h-[300px] rounded-2xl">
-                    <img className='w-[200px] h-[250px] rounded-2xl' src="https://i.postimg.cc/50DZhGs8/person2.jpg" alt="" />
-                    <div className='w-[580px]'>
+                <div className="keen-slider__slide number-slide1  shadow-md lg:flex items-center gap-10 justify-center bg-[#EDFDFC] lg:h-[300px] rounded-2xl">
+                    <div  className='flex justify-center pt-5 lg:pt-0'>
+                        <img className='w-[200px] h-[250px] rounded-2xl' src="https://i.postimg.cc/50DZhGs8/person2.jpg" alt="" />
+                    </div>
+                    <div className='px-5 lg:px-0 py-5 lg:py-5 lg:w-[580px] text-center hidden md:block'>
                         <h1>With the help of Flick, my content ranks consistently on the hashtags I use. And, it helps me achieve these results in less than 60 minutes per month - I also love that Flick is now more than a hashtag tool. I can monitor the effectiveness of my content, and schedule my posts weeks in advance.</h1>
                         <h4 className='mt-5 font-bold text-xl'>Simon Mitchell
                         </h4>
@@ -86,23 +92,23 @@ const Slider = () => {
 
 
             </div>
-            <section className='mt-20 flex justify-center gap-20'>
+            <section className='mt-20 md:flex justify-center gap-20'>
                 <div className='text-center'>
                     <h1 className='text-2xl font-bold mb-4'>Helping you get organized, <br />
                         consistent, and productive on Social.</h1>
-                    <p className='w-[450px] mx-auto'>Using social for business isn’t easy. Save time, and improve results, no matter which platform is leading the way.</p>
+                    <p className='lg:w-[450px] mx-auto'>Using social for business isn’t easy. Save time, and improve results, no matter which platform is leading the way.</p>
                 </div>
-                <div className='text-center'>
+                <div className='text-center mt-10 md:mt-0'>
                     <h1 className='text-2xl font-bold mb-4'>Built with love, care and <br />
                         customer experience at its core.</h1>
-                    <p className='w-[450px] mx-auto'>Designed to help you succeed in every possible way—from our hands-on customer service, to thoughtful user experience.</p>
+                    <p className='lg:w-[450px] mx-auto'>Designed to help you succeed in every possible way—from our hands-on customer service, to thoughtful user experience.</p>
                 </div>
             </section>
             <div>
 
                 <div className='grid justify-center mt-5'>
                     <div className='text-[14px] mt-4  gap-10'>
-                        <button className='text-[18px] w-[410px ] border shadow-md hover:text-white hover:bg-[#266CDF] font-bold px-28 p-2 rounded-lg mt-4 '>Fry Flick for Free</button>
+                        <button className='text-[18px] w-full lg:w-[410px ] border shadow-md hover:text-white hover:bg-[#266CDF] font-bold px-28 p-2 rounded-lg mt-4 '>Fry Flick for Free</button>
                         <div className='flex justify-center mt-5 gap-5'>
                             <p>7-Day Trial
                             </p>
