@@ -108,7 +108,7 @@ const Slider = () => {
 
                 <div className='grid justify-center mt-5'>
                     <div className='text-[14px] mt-4  gap-10'>
-                        <button className='text-[18px] w-full lg:w-[410px ] border shadow-md hover:text-white hover:bg-[#266CDF] font-bold px-28 p-2 rounded-lg mt-4 '>Fry Flick for Free</button>
+                        <button className='text-[18px] w-full lg:w-[410px ] border shadow-md hover:text-white hover:bg-[#266CDF] font-bold md:px-28 p-2 rounded-lg mt-4 '>Fry Flick for Free</button>
                         <div className='flex justify-center mt-5 gap-5'>
                             <p>7-Day Trial
                             </p>

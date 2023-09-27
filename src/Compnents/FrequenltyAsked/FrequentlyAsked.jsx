@@ -66,7 +66,7 @@ const FrequentlyAsked = () => {
                     <div className='bg-[#FAFAFA] p-6 rounded-xl h-[250px] text-center mt-10 lg:mt-0'>
                         <h1 className='text-3xl font-bold'>Ready to get started?</h1>
                         <p className='my-3'>Join 100k+ creators, brands and social media managers using Flick to save them time and improve results.</p>
-                        <button className='text-[18px] w-[300px ] bg-[#266CDF] px-20 p-2 rounded-lg mt-6 text-white font-bold'>Start 7 Days Trial</button>
+                        <button className='text-[18px] w-[300px ] bg-[#266CDF] md:px-20 p-2 rounded-lg mt-6 text-white font-bold'>Start 7 Days Trial</button>
                     </div>
                 </div>
 
